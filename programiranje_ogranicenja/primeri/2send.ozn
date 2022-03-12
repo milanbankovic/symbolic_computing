@@ -1,0 +1,9 @@
+output ["\"output\": {","\"default\": ",showJSON(concat([""++format(S)++""++format(E)++""++format(N)++""++format(D)++" + "++format(M)++""++format(O)++""++format(R)++""++format(E)++" = "++format(M)++""++format(O)++""++format(N)++""++format(E)++""++format(Y)++""])),", \"raw\": ",showJSON(concat([""++format(S)++""++format(E)++""++format(N)++""++format(D)++" + "++format(M)++""++format(O)++""++format(R)++""++format(E)++" = "++format(M)++""++format(O)++""++format(N)++""++format(E)++""++format(Y)++""])),"}, \"sections\": [\"default\", \"raw\"]"];
+int: S;
+int: E;
+int: N;
+int: D;
+int: M;
+int: O;
+int: R;
+int: Y;

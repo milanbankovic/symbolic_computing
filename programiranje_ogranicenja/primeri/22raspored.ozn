@@ -1,0 +1,5 @@
+output ["\"output\": {","\"default\": ",showJSON(concat([show(rasporedPregledno[j,t,s])++if t==brDana then if s==casovaDnevno then "\n\n\n" else "\n" endif else " " endif | j in 1..brOdeljenja, s in 1..casovaDnevno, t in 1..brDana])),", \"raw\": ",showJSON(concat([show(rasporedPregledno[j,t,s])++if t==brDana then if s==casovaDnevno then "\n\n\n" else "\n" endif else " " endif | j in 1..brOdeljenja, s in 1..casovaDnevno, t in 1..brDana])),"}, \"sections\": [\"default\", \"raw\"]"];
+array [1..brOdeljenja,1..brDana,1..casovaDnevno] of int: rasporedPregledno;
+int: casovaDnevno = 4;
+int: brDana = 5;
+int: brOdeljenja = 5;

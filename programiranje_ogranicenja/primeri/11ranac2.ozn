@@ -1,0 +1,5 @@
+output ["\"output\": {","\"default\": ",showJSON(concat([(((("Set: "++show(S))++" with size: ")++show(knapsack_sum(S,Sizes)))++" and value: ")++show(knapsack_sum(S,Values))])),", \"raw\": ",showJSON(concat([(((("Set: "++show(S))++" with size: ")++show(knapsack_sum(S,Sizes)))++" and value: ")++show(knapsack_sum(S,Values))])),"}, \"sections\": [\"default\", \"raw\"]"];
+function int : knapsack_sum(set of Items: s,array [Items] of int: c) = sum([c[i] | i in s]);
+set of int: S;
+array [Items] of int: Sizes = [5,2,7,9,4];
+array [Items] of int: Values = [3,2,7,4,6];
