@@ -1,0 +1,7 @@
+m = 3;
+n = 7;
+N = 7;
+r = 2;
+E = [|true, true, false, false, true, true, false|
+         true, false, true, false, true, false, false|
+         true, true, true, false, false, false, true|];
